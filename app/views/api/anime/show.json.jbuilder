@@ -1,0 +1,1 @@
+json.partial! '/api/anime/anime', anime: @anime
