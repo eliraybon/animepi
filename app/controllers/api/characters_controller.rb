@@ -1,14 +1,19 @@
 class Api::CharactersController < ApplicationController
 
   def index
-    @characters = Character.all
-    render json: @characters
+    anime = Anime.find_by(id: params[:anime_id])
+    if anime
+      @characters = anime.characters
+    else 
+      @characters = Character.all
+    end
+    render :index
   end
 
   def show
     @character = Character.find_by(id: params[:id])
     if @character
-      render json: @character
+      render :show
     else
       render json: ["Character not found"], status: 404
     end
