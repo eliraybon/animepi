@@ -1,7 +1,12 @@
 class Api::AnimeController < ApplicationController
 
   def index
-    @anime = Anime.all
+    if params[:search]
+      search_term = "%#{titleize(params[:search])}%"
+      @anime = Anime.where('title LIKE ?', search_term)
+    else 
+      @anime = Anime.all
+    end
     render :index
   end
 
