@@ -34,11 +34,12 @@ class Api::CharactersController < ApplicationController
     search = build_search_query(params)
 
     if search[:search_query].empty? 
-      @characters = Character.includes(:anime).all
+      @characters = Character.includes(:anime).all.order(search[:order])
     else
       @characters = Character
                       .includes(:anime)
                       .where(search[:search_query], *search[:values])
+                      .order(search[:order])
     end
 
     render :index
