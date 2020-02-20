@@ -4,9 +4,10 @@ class Api::AnimeController < ApplicationController
     search = build_search_query(params)
 
     if search[:search_query].empty?
-      @anime = Anime.all
+      #if there is no order param... Rails will make query SELECT anime.* FROM anime
+      @anime = Anime.all.order(search[:order])
     else
-      @anime = Anime.where(search[:search_query], *search[:values])
+      @anime = Anime.where(search[:search_query], *search[:values]).order(search[:order])
     end
 
     render :index

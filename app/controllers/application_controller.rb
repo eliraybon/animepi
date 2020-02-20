@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   def build_search_query(params)
     search_query = []
     values = []
+    order = ""
     
     params.each do |key, val|
       if !IGNORE.include?(key)
@@ -19,6 +20,9 @@ class ApplicationController < ActionController::Base
         elsif key == "anime"
           anime_ids = Anime.where("LOWER(title) LIKE ?", "%#{val.downcase}%").pluck(:id)
           search_query << "anime_id IN (#{anime_ids.join(', ')})"
+        elsif key == "order"
+          desc = params.has_key?(:desc) ? "DESC" : ""
+          order << "#{params[:order]} #{desc}"
         end
       end
     end
@@ -27,7 +31,8 @@ class ApplicationController < ActionController::Base
 
     {
       search_query: search_query, 
-      values: values 
+      values: values,
+      order: order 
     }
   end
 end
