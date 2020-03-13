@@ -25,18 +25,6 @@ hunter_x_hunter.characters.create(name: 'Bicuit Krueger')
 hunter_x_hunter.characters.create(name: 'Meruem')
 hunter_x_hunter.characters.create(name: 'Komugi')
 
-
-stars_align = Anime.create(
-  title: 'Stars Align',
-  genre: 'Sports / Slice of Life',
-  episodes: 12, 
-  year: 2019
-)
-
-stars_align.characters.create(name: 'Maki Katsuragi')
-stars_align.characters.create(name: 'Toma Shinjo')
-stars_align.characters.create(name: 'Yu')
-
 free = Anime.create(
   title: 'Free!',
   genre: 'Sports / Slice of Life',

@@ -1,0 +1,40 @@
+body {
+  background: $main-blue;
+  // background: white;
+}
+
+.header {
+  background-image: linear-gradient(to bottom right, $main-blue, $navy);
+  background-image: linear-gradient(to bottom right, rgb(68, 188, 248), $main-blue);
+  // padding: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  // margin-left: 5px;
+  padding: 15px;
+  // border-right: 2px solid gray;
+  border-left: 1px solid gray;
+  border-style: outset;
+}
+
+.nav-link:last-of-type {
+  border-right: 1px solid gray;
+}
+
+.nav-link:hover {
+  background: $navy;
+  border-style: inset;
+}
+
+.nav-bar {
+  display: flex;
+  height: 100%;
+  margin-right: 10px;
+}
