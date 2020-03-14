@@ -66,7 +66,14 @@
   justify-content: center;
   height: 300px;
   overflow: scroll;
-  padding: 20px 0px;
+  padding: 20px 30px;
+  white-space: pre-wrap; 
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;   
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  -moz-tab-size: 2;
+  tab-size: 2;
 }
 
 #api-output::-webkit-scrollbar {
@@ -74,7 +81,7 @@
   background: transparent;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1100px) {
   .try {
     height: (max-content);
     flex-direction: column;
@@ -85,9 +92,8 @@
 
   .try-description {
     padding: 0;
-    width: 550px;
+    width: 612px;
     margin-right: 0;
-    margin-left: 10px;
 
     h3 {
       margin: 0;
@@ -104,7 +110,7 @@
   }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 680px) {
 
   .try {
     padding: 40px 0px;
@@ -118,10 +124,7 @@
   #api-output {
     min-width: unset;
     max-width: unset;
-    width: 87vw;
-    -moz-tab-size: 2;
-    tab-size: 2;
+    width: 78vw;
   }
-
 
 }
