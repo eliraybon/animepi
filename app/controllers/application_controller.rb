@@ -1,8 +1,7 @@
 class ApplicationController < ActionController::Base
-  SMALL_WORDS = Set.new(%w(and of x))
+  STRING_PARAMS = Set.new(%w(title genre studio description))
+  NUM_PARAMS = Set.new(%w(year episodes))
   IGNORE = Set.new(%w(page format controller action))
-  STRING_PARAMS = Set.new(%w(title genre name gender eye_color hair_color voice_actor))
-  NUM_PARAMS = Set.new(%w(year episodes age height weight birthday))
 
   def build_search_query(params)
     search_query = []
@@ -34,5 +33,9 @@ class ApplicationController < ActionController::Base
       values: values,
       order: order 
     }
+  end
+
+  def admin?
+    request.headers[:token] == Rails.application.credentials.admin_token
   end
 end
