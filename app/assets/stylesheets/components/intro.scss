@@ -1,0 +1,51 @@
+.intro {
+  height: 440px;
+  background-image: url("https://dokicupid-seeds.s3-us-west-1.amazonaws.com/animegirl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6%;
+  padding-bottom: 55px;
+  cursor: default;
+  width: 100%;
+  overflow: hidden;
+  background-color: #373737;
+}
+
+.intro h1 {
+  font-size: 85px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-left: 3px;
+  text-shadow: 2px 2px 5px black;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    h1 {
+      font-size: 65px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro {
+    background-size: auto 145%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .intro {
+    padding-left: 300px;
+  }
+}

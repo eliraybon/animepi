@@ -1,0 +1,25 @@
+footer {
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  max-width: 100%;
+}
+
+.footer-names {
+  color: rgb(184, 184, 184);
+  font-size: 14px;
+  margin: 0px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  margin-right: 20px;
+  a {
+    margin: 0px 5px;
+  }
+}
+
