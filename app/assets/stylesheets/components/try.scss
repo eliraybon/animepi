@@ -1,0 +1,127 @@
+.try {
+  display: flex;
+  height: 480px;
+  padding: 35px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.try-description {
+  padding: 30px 0px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.try h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 3px;
+  margin-top: 30px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  input {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    color: black;
+    padding: 8px 10px;
+    width: 230px;
+  }
+
+  i {
+    font-size: 25px;
+    margin: 18px;
+    transform: rotate(55deg);
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    bottom: 3px;
+  }
+
+  i:hover {
+    opacity: 1;
+  }
+}
+
+#api-output {
+  background-color: rgb(26, 26, 26);
+  border: 1px solid rgb(97, 97, 97);
+  height: 390px;
+  margin: 0;
+  border-radius: 5px;
+  min-width: 550px;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  overflow: scroll;
+  padding: 20px 0px;
+}
+
+#api-output::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+@media only screen and (max-width: 970px) {
+  .try {
+    height: (max-content);
+    flex-direction: column;
+    padding: 40px 20px;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .try-description {
+    padding: 0;
+    width: 550px;
+    margin-right: 0;
+    margin-left: 10px;
+
+    h3 {
+      margin: 0;
+      font-size: 25px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+  }
+
+  #api-output {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+
+  .try {
+    padding: 40px 0px;
+  }
+
+  .try-description {
+    width: 87vw;
+    margin-left: unset;
+  }
+
+  #api-output {
+    min-width: unset;
+    max-width: unset;
+    width: 87vw;
+    -moz-tab-size: 2;
+    tab-size: 2;
+  }
+
+
+}

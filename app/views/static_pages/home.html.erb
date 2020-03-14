@@ -1,33 +1,56 @@
-<%= render "header" %>
+<%#= render "header" %>
 
-<section>
+<section class="intro">
   <h1>AnimePI</h1>
   <p>The Anime API</p>
 </section>
 
-<section>
-  <p>All the anime data you've ever wanted!</p>
-  <p>Your favorite anime isn't here? <b>Make a request</b> or <i>contribute</i></p>
-  <p>ITEMS coming soon</p>
+
+<section class="main">
+  <p class="main-1">All the anime data you've ever wanted</p>
+  <p class="main-2">Interested in using AnimePI? <span>Check out our <a href="#">documentation</a> ٩(^ᴗ^)۶</span></p>
+  <p class="main-3">ITEMS coming soon</p>
 </section>
 
-<section>
-  <h3>Try it out!</h3>
-  <input type="text" id="req-input" />
-  <button id="req-button">request</button>
-
+<section class="try">
+  <section class="try-description">
+    <h3>Try it out!</h3>
+    <div class="input-container">
+      <input type="text" id="req-input" />
+      <%# <button id="req-button">request</button> %>
+      <i id="req-button" class="fas fa-paper-plane"></i>
+    </div>
+  </section>
   <pre id="api-output">
-    I can have
-      pre
-        formatted
-    text
+{
+  "results": [
+    {
+      "title": "Hunter x Hunter",
+      "genre": "Shonen",
+      "year": 2011,
+      "episodes": 148
+    },
+    {
+      "title": "Free!",
+      "genre": "Sports / Slice of Life",
+      "year": 2014,
+      "episodes": 36
+    },
+    {
+      "title": "Naruto",
+      "genre": "Shonen",
+      "year": 2004,
+      "episodes": 400
+    }
+  ]
+}
   </pre>
 
 </section>
 
-<section>
+<section class="info">
   <div>
-    <h3>What is this?</h3>
+    <h3>OwO what's this?</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit sunt doloremque qui odio dolor odit ducimus dolorum sequi, provident rerum laborum consectetur quidem doloribus deserunt corrupti vitae tempora ipsum.</p>
   </div>
 
