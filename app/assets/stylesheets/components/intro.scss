@@ -1,0 +1,25 @@
+.intro {
+  height: 400px;
+  background-image: url("https://dokicupid-seeds.s3-us-west-1.amazonaws.com/animegirl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6%;
+  padding-bottom: 55px;
+  cursor: default;
+}
+
+.intro h1 {
+  font-size: 85px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: white;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-left: 3px;
+}

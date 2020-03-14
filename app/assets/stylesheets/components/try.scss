@@ -1,0 +1,27 @@
+.try {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+}
+
+.try section {
+  width: 50%;
+  height: 100%;
+}
+
+.try h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0px;
+}
+
+.try input {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  width: 250px;
+}
+

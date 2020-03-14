@@ -14,7 +14,8 @@ span, article, footer, time, small {
   vertical-align: inherit;
   box-sizing: border-box;
   background: transparent;
-  font-family: 'IBM Plex Sans', sans-serif;
+  // font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $main;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -53,4 +54,9 @@ button, input[type="submit"] {
   content: "";
   display: block;
   clear: both;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+  color: white;
 }
