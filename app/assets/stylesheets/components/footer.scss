@@ -3,9 +3,15 @@ footer {
   background-color: rgb(24, 24, 24);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   font-size: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
+}
+
+footer p {
+  color: lightgray;
+  font-style: italic;
+  font-size: 14px;
 }
 
 footer a {

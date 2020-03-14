@@ -2,7 +2,7 @@
   font-size: 20px;
   background-color: rgb(228, 228, 228);
   color: black;
-  height: 200px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,7 @@
 }
 
 .main-1 {
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -21,29 +21,34 @@
 }
 
 .main-2 {
+  font-size: 19px;
   padding: 10px 0px;
   margin: 0px 30px;
   text-align: center;
+  letter-spacing: 0.5px;
+  a {
+    font-weight: bold;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover {
+    opacity: 0.6;
+  }
 }
 
 .main-3 {
   font-style: italic;
   color: rgb(111, 111, 111);
   padding: 10px 0px;
-  margin: 0px 20px
+  margin: 0px 20px;
+  font-size: 18px;
 }
 
 
 
 
-@media only screen and (max-width: 790px) {
-  .main-1 {
-    font-size: 25px;
-    letter-spacing: 2px;
-  }
-}
 
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 650px) {
   .main {
     height: 230px;
   }
@@ -59,9 +64,9 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 590px) {
   .main-1 {
-    width: 255px;
+    width: 270px;
   }
   .main-2 {
     width: 255px;
