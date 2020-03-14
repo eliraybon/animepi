@@ -12,10 +12,10 @@
 
 $(document).ready(function () {
   $("#req-button").click(function () {
-    const value = $("#req-input").val();
-    const url = "/api/" + value;
+    var value = $("#req-input").val();
+    var url = "/api/" + value;
     $.ajax({ url: url }).complete(function(data) {
-      const content = $.parseJSON(data['responseText']);
+      var content = $.parseJSON(data['responseText']);
       $("#api-output").text(JSON.stringify(content, null, '\t'));
     })
   })
