@@ -6,6 +6,7 @@ footer {
   justify-content: space-between;
   font-size: 15px;
   max-width: 100%;
+  color: rgb(184, 184, 184);
 }
 
 .footer-names {
@@ -20,6 +21,11 @@ footer {
   margin-right: 20px;
   a {
     margin: 0px 5px;
+    color: rgb(184, 184, 184);
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover {
+    color: white;
   }
 }
 
