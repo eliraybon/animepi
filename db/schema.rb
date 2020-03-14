@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_12_012623) do
+ActiveRecord::Schema.define(version: 2020_03_14_185707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 2020_02_12_012623) do
     t.integer "episodes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "studio"
+    t.string "image_url"
+    t.index ["title"], name: "index_anime_on_title"
   end
 
   create_table "characters", force: :cascade do |t|
