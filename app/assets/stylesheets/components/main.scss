@@ -21,7 +21,7 @@
 }
 
 .main-2 {
-  font-size: 19px;
+  font-size: 18px;
   padding: 10px 0px;
   margin: 0px 30px;
   text-align: center;
@@ -68,7 +68,12 @@
   .main-1 {
     width: 270px;
   }
+
   .main-2 {
-    width: 255px;
+    line-height: 22px;
+  }
+
+  .main-2 span{
+    display: block;
   }
 }

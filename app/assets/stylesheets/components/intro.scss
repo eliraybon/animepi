@@ -12,6 +12,7 @@
   cursor: default;
   width: 100%;
   overflow: hidden;
+  background-color: #373737;
 }
 
 .intro h1 {
@@ -25,6 +26,8 @@
 .intro p {
   font-size: 18px;
   margin-left: 3px;
+  text-shadow: 2px 2px 5px black;
+  letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -32,5 +35,17 @@
     h1 {
       font-size: 65px;
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro {
+    background-size: auto 145%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .intro {
+    padding-left: 300px;
   }
 }
