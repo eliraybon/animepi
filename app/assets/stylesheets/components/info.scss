@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 40px 30px;
+  cursor: default;
 }
 
 .info div {
@@ -21,16 +22,43 @@
 
 .info p {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(222, 222, 222);
+  line-height: 24px;
+
+  a {
+    font-weight: bold;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+.about-us {
+  letter-spacing: 1px;
+  line-height: 24px;
+  span {
+    text-transform: uppercase;
+  }
+  
+}
+
+.info > .about-us-container a {
+  font-size: 13px;
+}
+
+.info > .about-us-container i {
+  font-size: 10px;
 }
 
 
 @media only screen and (max-width: 600px) {
 
   .info h3 {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 19px;
   }
 
   .info p {
