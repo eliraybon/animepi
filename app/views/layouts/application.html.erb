@@ -2,15 +2,27 @@
 <html>
   <head>
     <title>AnimePI</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <%= favicon_link_tag asset_path("favicon.PNG") %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script>
+      window.addEventListener('load', function() {
+        document.getElementById("loadOverlay").style.display="none";
+      });
+    </script>
   </head>
 
   <body>
+    <div id="loadOverlay" style="background-color:#fff; position:absolute; top:0px; left:0px; width:100vw; height:1900px; z-index:2000;"></div>
+    <script>
+      document.getElementById("loadOverlay").style.display="block";
+    </script>
+
     <%= yield %>
   </body>
 </html>
