@@ -10,6 +10,8 @@
   padding-left: 6%;
   padding-bottom: 55px;
   cursor: default;
+  width: 100%;
+  overflow: hidden;
 }
 
 .intro h1 {
@@ -22,4 +24,12 @@
 .intro p {
   font-size: 18px;
   margin-left: 3px;
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    h1 {
+      font-size: 65px;
+    }
+  }
 }

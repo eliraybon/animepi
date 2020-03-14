@@ -59,4 +59,6 @@ button, input[type="submit"] {
 body {
   background-color: rgb(33, 33, 33);
   color: white;
+  width: 100vw;
+  overflow-x: hidden;
 }

@@ -5,9 +5,9 @@
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  width: 100%;
   cursor: default;
 }
 
@@ -15,9 +15,55 @@
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px 20px
+}
+
+.main-2 {
+  padding: 10px 0px;
+  margin: 0px 30px;
+  text-align: center;
 }
 
 .main-3 {
   font-style: italic;
   color: rgb(111, 111, 111);
+  padding: 10px 0px;
+  margin: 0px 20px
+}
+
+
+
+
+@media only screen and (max-width: 790px) {
+  .main-1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .main {
+    height: 230px;
+  }
+  .main-1 {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .main-2 {
+    font-size: 16px;
+  }
+  .main-3 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-1 {
+    width: 255px;
+  }
+  .main-2 {
+    width: 255px;
+  }
 }
