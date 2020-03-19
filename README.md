@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to AnimePI, your gateway to all the anime data you could ever want! This quick documentation will cover the rescources available and how to interact with the API with HTTP requests. After this quick read, you should be good to go! If you're interested in a JS helper library, check out animepi-node. 
+Welcome to AnimePI, your gateway to all the anime data you could ever want! This quick documentation will cover the rescources available and how to interact with the API with HTTP requests. After this quick read, you should be good to go! If you're interested in a JS helper library, check out [animepi-node](https://github.com/eliraybon/animepi-node). 
 
 Note: The database hasn't been completely seeded yet as AnimePI is still in it's testing phase.
 
@@ -82,6 +82,10 @@ If we wanted to narrow our search further and only see anime by Madhouse from 20
 
 ```api/anime?studio=madhouse&year=2011```
 
+Results are limited to 25 per page. You can control the returned page with the ```page``` param (which defaults to 1):
+
+```api/anime?studio=madhouse&year=2011&page=2```
+
 ## Ordering Results 
 
 Let's say we wanted to sort the results of our last query by title. We would simply add ```order``` to our query string. 
@@ -94,5 +98,5 @@ If we want the sorted results to be in descending order, we can add ```desc``` a
 
 ## Helper Library
 
-To interact with the API in an even simpler and more intutive way, check out the Node.js helper library here: animepi-node
+To interact with the API in an even simpler and more intutive way, check out the Node.js helper library here: [animepi-node](https://github.com/eliraybon/animepi-node)
 
