@@ -1,1 +1,1 @@
-json.partial! '/api/anime/anime', anime: @anime, is_admin: @is_admin
+json.partial! '/api/anime/anime', anime: @anime

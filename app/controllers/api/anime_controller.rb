@@ -1,7 +1,7 @@
 class Api::AnimeController < ApplicationController
 
   def index
-    @is_admin = admin?
+    # @is_admin = admin?
     search = build_search_query(params)
 
     if search[:search_query].empty?
